@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "poetry-buildinfo"
+description = "A plugin for poetry which generates artifactory bulid information during install."
+authors = [
+    "Richard Vodden <richard@humanisingautonomy.com>"
+]
+license = "MIT"
+version = "0.0.1"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+poetry = "^1.2"
+
+[tool.poetry.plugins."poetry.application.plugin"]
+buildinfo = "poetry_buildinfo:BuildInfoPlugin"
