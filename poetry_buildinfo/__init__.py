@@ -1,1 +1,2 @@
 from .build_info_plugin import BuildInfoPlugin
+from .artifactory_client import ArtifactoryClient

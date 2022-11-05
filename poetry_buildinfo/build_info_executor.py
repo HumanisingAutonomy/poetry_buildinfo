@@ -27,9 +27,8 @@ class BuildInfoExecutor(Executor):
     def _log_operation(self, operation: str, package: str, url: str):
         return self._operation_log.append({
             "operation": operation,
-            "package": package.pretty_name,
-            "type": package.source_type,
-            "url": url
+            "package": package,
+            "url": url,
         })
 
     def _install(self, operation: Install | Update):

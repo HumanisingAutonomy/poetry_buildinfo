@@ -7,9 +7,21 @@ authors = [
 license = "MIT"
 version = "0.0.1"
 
+[[tool.poetry.source]]
+name = "hapypi"
+url = "https://humanisingautonomy.jfrog.io/artifactory/api/pypi/ha-pypi/simple"
+default = true
+
 [tool.poetry.dependencies]
 python = "^3.10"
+fastapi = "^0.85.1"
 poetry = "^1.2"
+requests = "^2.28.1"
+pyyaml = "^6.0"
+pydantic = "^1.10.2"
 
 [tool.poetry.plugins."poetry.application.plugin"]
 buildinfo = "poetry_buildinfo:BuildInfoPlugin"
+[tool.poetry.group.dev.dependencies]
+requests-mock = "^1.10.0"
+
